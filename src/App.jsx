@@ -3,6 +3,8 @@ import React from "react";
 import Navbar from "./Components/Navbar";
 import ListItem from "./Components/ListItem";
 import Welcome from "./Components/Welcome";
+import About from "./Components/About";
+import ContactForm from "./Components/Contact";
 //assets
 import home from "./SVG/home.svg";
 import projects from "./SVG/projects.svg";
@@ -12,7 +14,7 @@ import themesvg from "./SVG/themes.svg";
 import Project from "./Components/Project";
 //links
 const links = [
-  ["#", "#MYPROJECTS", "#", "#", "#"], //nav links
+  ["#", "#MYPROJECTS", "#ABOUT", "#CONTACT", "#"], //nav links
   ["#", "#", "#", "#", "#"], //image links
   ["#", "#", "#", "#", "#"], //github links
   ["#", "#", "#", "#", "#"], //live app links
@@ -112,6 +114,12 @@ function App() {
             appLink="#"
             github="#"
           ></Project>
+        </div>
+        <div id="ABOUT">
+          <About/>
+        </div>
+        <div id="CONTACT">
+          <ContactForm/>
         </div>
       </main>
     </div>

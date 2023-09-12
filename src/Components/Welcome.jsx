@@ -9,10 +9,10 @@ function Welcome() {
             <h2 className="text-4xl font-semibold mb-5 sm:w-[21.75rem]
                            smoll:w-[21.75rem]">Front-End Developer</h2>
 
-            <p className="sm:w-[21.851875rem] smoll:w-[21.851875rem]">
+            <p className="sm:w-[21.851875rem]">
                 I love creating web applications and websites and here you'll find all of my projects
             </p>
-            <p className="absolute sm:w-[17.1875rem] smoll:w-[17.1875]">
+            <p className="absolute sm:w-[17.1875rem] smoll:m-1">
                 For more info, check the About page.
             </p>
         </section>
