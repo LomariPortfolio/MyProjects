@@ -6,6 +6,7 @@ import Welcome from "./Components/Welcome";
 import About from "./Components/About";
 import ContactForm from "./Components/Contact";
 //assets
+import newsletterImage from "./IMAGES/NEWSLETTER.png"
 import home from "./SVG/home.svg";
 import projects from "./SVG/projects.svg";
 import contact from "./SVG/contact.svg";
@@ -15,9 +16,9 @@ import Project from "./Components/Project";
 //links
 const links = [
   ["#", "#MYPROJECTS", "#ABOUT", "#CONTACT", "#"], //nav links
-  ["#", "#", "#", "#", "#"], //image links
-  ["#", "#", "#", "#", "#"], //github links
-  ["#", "#", "#", "#", "#"], //live app links
+  [newsletterImage, "#", "#", "#", "#"], //image links
+  ["https://github.com/LomariPortfolio/Newsletter-App", "#", "#", "#", "#"], //github links
+  ["https://newsletter-tz0h.onrender.com/", "#", "#", "#", "#"], //live app links
 ];
 function App() {
   return (
@@ -52,11 +53,11 @@ function App() {
           sm:mt-[10%] sm:grid-cols-2 sm:pt-[10%] smoll:mt-[5%] smoll:pt-[10%]"
         >
           <Project
-            image="https://wallpapers.com/images/featured/1080p-3qmj7oaige168170.jpg"
-            title="My App"
-            description="pretty cool right? 😂"
-            appLink="#"
-            github="#"
+            image={links[1][0]}
+            title="Newsletter app"
+            description="Recieve emails by subscribing in my newsletter! 📧"
+            appLink={links[3][0]}
+            github={links[2][0]}
           ></Project>
           <Project
             image="https://wallpapers.com/images/featured/1080p-3qmj7oaige168170.jpg"
